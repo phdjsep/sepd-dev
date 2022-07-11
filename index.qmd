@@ -1,7 +1,9 @@
 ---
-title: "sepd-dev"
+format:
+    html:
+        page-layout: full
 ---
+# **Hi!**
 
-This is a Quarto website.
+## My name is Sep and I have many interests, but my expertise lies in science, programming, and data.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

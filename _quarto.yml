@@ -2,18 +2,19 @@ project:
   type: website
 
 website:
-  title: "sepd-dev"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
+    # logo: super_sep.jpg 
+    title: "Sep Dadsetan"
+    background: primary
+    search: true
+    right:
       - about.qmd
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
-    toc: true
+    include-in-header: 
+      - fonts.html
+    theme: custom.scss
 
 
 
