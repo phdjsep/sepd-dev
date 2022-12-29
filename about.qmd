@@ -1,0 +1,17 @@
+---
+title: "About"
+image: profile.jpg
+about:
+  template: solana
+  links:
+    - icon: linkedin
+      href: https://www.linkedin.com/in/sepdadsetan/
+      text: "LinkedIn"
+    - icon: github
+      href: https://github.com/phdjsep/
+      text: "Github"
+
+---
+
+Long story short, I love learning. The subject is often irrelevant as I find beauty in most things, but if I were to identify some areas that have captivated my attention for most of my life they would be: biology, computers, and music.
+

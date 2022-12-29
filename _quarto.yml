@@ -1,0 +1,45 @@
+project:
+  type: website
+  
+website: 
+  page-navigation: true
+  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
+  repo-url: https://github.com/openscapes/quarto-website-tutorial 
+  repo-actions: []
+  
+  page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    left: "&copy; CC-By Sep Dadsetan, 2023"
+    
+  sidebar:
+    title: "Home & Garden"
+    logo: "assets/img/sepd_dev_hex.png"
+    pinned: true
+    align: center
+    tools: 
+      - icon: linkedin
+        href: https://www.linkedin.com/in/sepdadsetan/
+        text: "LinkedIn"
+      - icon: github
+        href: https://github.com/phdjsep/
+        text: "Github"
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - href: about.qmd
+        text: About
+      - href: posts.qmd
+        text: Posts
+
+format:
+  html:
+    theme:
+      light: [cosmo, assets/styles/light.scss]
+      # dark: [cosmo, assets/styles/dark.scss]
+    code-copy: true
+    code-overflow: wrap
+    toc: false
+
+
+  

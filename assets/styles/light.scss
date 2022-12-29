@@ -1,0 +1,24 @@
+/*-- scss:defaults --*/
+:root {
+    --animate-delay: 0.5s;
+}
+
+/*-- scss:rules --*/
+.sidebar-title .sidebar-tools-main {
+    a.sidebar-tool {
+            transition: 0.4s;
+            -webkit-transition: 0.4s;
+        }
+    a.sidebar-tool[title="LinkedIn"]:hover {
+        color: #0077B5;
+    }
+    a.sidebar-tool[title="Github"]:hover {
+        color: #000000;
+    }
+    display: inherit;
+    margin-top: 0;
+}
+
+.quarto-listing-container-default {
+    margin-right: 0;
+}

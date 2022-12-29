@@ -1,0 +1,35 @@
+---
+listing:
+  id: summary-posts
+  contents: posts
+  sort: "date desc"
+  type: grid
+  date-format: short
+  max-items: 3
+  categories: false
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: false
+title-block-style: none
+---
+
+# Hi! I'm **Sep Dadsetan** 👋
+### This is my digital garden where you'll find my messy musings, scribbled how-to's, random projects, and a showcase of my musical and photographic art.
+#### Currently leading Real World Data (RWD) Analytics at ConcertAI
+
+:::{.grid}
+
+:::{.g-col-12 .g-col-md-8}
+## Posts
+
+:::{#summary-posts}
+:::
+
+:::
+
+:::{.g-col-12 .g-col-md-4}
+## Music
+:::
+
+:::
