@@ -4,11 +4,15 @@
 }
 
 /*-- scss:rules --*/
+
+// transition link hovers
+a {
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+}
+
+// customize colors for LinkedIn and Github tool links
 .sidebar-title .sidebar-tools-main {
-    a.sidebar-tool {
-            transition: 0.4s;
-            -webkit-transition: 0.4s;
-        }
     a.sidebar-tool[title="LinkedIn"]:hover {
         color: #0077B5;
     }
@@ -19,6 +23,10 @@
     margin-top: 0;
 }
 
+// remove margin from blog post list
 .quarto-listing-container-default {
     margin-right: 0;
 }
+
+// About page
+// .about-contents {}

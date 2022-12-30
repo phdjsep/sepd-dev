@@ -1,17 +1,17 @@
 ---
 title: "About"
-image: profile.jpg
 about:
   template: solana
-  links:
-    - icon: linkedin
-      href: https://www.linkedin.com/in/sepdadsetan/
-      text: "LinkedIn"
-    - icon: github
-      href: https://github.com/phdjsep/
-      text: "Github"
-
 ---
 
-Long story short, I love learning. The subject is often irrelevant as I find beauty in most things, but if I were to identify some areas that have captivated my attention for most of my life they would be: biology, computers, and music.
+Whoa, you're reading my "About" page? I'm flattered. Hopefully you get to learn a little more about me AND not fall asleep in the process (unless this is somehow part of your bedtime routine 😴).
 
+### My Interests
+Quite honestly there isn't much that I'm not interested in. I find there's something to learn from pretty much everyone, everything, and every scenario. If I were to choose some major themes however, they would be **biology**, **technology**, and **music**. 
+
+### Where It Started
+From an early age (about 5 years old), I knew I wanted to be a scientist. The declaration came while in Yosemite. My Mom and her best friend were getting ready for a wedding. I was sitting on the bed intently watching the Discovery Channel when my Mom’s friend turned to me and asked, “I have a favor to ask you. Will you be the ring bearer?”. After a few seconds of thought, I cried and vehemently declared that I did not want to be a ring bearer and that, “I want to be a scientist!”. It was of course explained to me that the role was temporary and I could pursue both, so I graciously accepted the temporary ring bearer role. 😆
+
+A little later, around 7th grade (~ 1993), was when I decided I was going to study genetics in college. The [Human Genome Project](https://www.genome.gov/human-genome-project) was underway and this cool frontier of understanding our DNA was captivating to me. I was fortunate enough to hold on to that dream and receive my B.S. in Genetics from UC Davis in 2003 and pseudo-fulfill my aspirations of becoming a scientist. ❤️
+
+### To Be Continued...
