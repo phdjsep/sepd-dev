@@ -1,12 +1,66 @@
 ---
-title: "Welcome To My Blog"
-author: "Tristan O'Malley"
-date: "2022-11-30"
-categories: [news]
+title: "Welcome To My Garden 🪴"
+author: "Sep Dadsetan"
+date: "2022-12-30"
+categories: [news, tips]
+title-block-banner: false
+comments:
+  giscus: 
+    repo: phdjsep/sepd-dev
 ---
 
-This is the first post in a Quarto blog. Welcome!
+So glad you could make it! This is the first post in what I hope becomes one of many. As always, please reach out and say hi 👋
 
-![](thumbnail.jpg)
+Growing up I never really enjoyed writing. It felt like a chore and I much preferred the "tactile" activities like those found in science class. It wasn't until graduate school (late, I know) that I began to appreciate it more. The motivation for this site really comes from two places: 
 
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+1. I've written how-to's and articles to help others with their questions so I figured why not reproduce for other internet passers-by to make use of.
+2. I wanted a space to both 'play' (software is always evolving), but also share my other joys like music and photography in a way that I can't (and don't want to) through social media. This site is mine!
+
+:::{.callout-note appearance="simple"}
+Also, shout out to [Javier Orraca](https://javierorraca.com/) for providing some much needed motivation to get this going. 🙏
+:::
+
+Not much else to say in my first post, but I want to share a tip to maybe make your visit worthwhile. It's something I don't see many data folks use so maybe it's useful for you.
+
+### Installing Quarto Using Brew
+
+#### Quarto
+If you're from the R world I'm sure you've heard of [Quarto](https://www.quarto.org) by now. In short, Quarto is a publishing system built on Pandoc that allows you to do all sorts of fun stuff and you really need to check it out. I won't go into too much detail as there are already MANY great resources online for what it is and how to use it for your needs. If there's interest, I'd be happy to cover a scenario or two, but you'll have to let me know in the comments.
+
+#### Brew
+Now let's get to the second character in our story, [Homebrew](https://brew.sh/). For those on the Mac, this is a very valuable tool to have on your machine as it helps with installing and managing a wide array of CLI (command line interface) tools as well as GUI (graphical user interface) applications. For example, if you wanted to install the RStudio IDE, rather than go to the [Posit Downloads](https://posit.co/downloads/), download the application, and install it on your machine, you could install the RStudio IDE with a simple one-line command.
+
+```
+brew install --cask rstudio
+```
+
+Cool, right?! There's a [handy Medium article](https://medium.com/@aplaceofmind/8-ways-i-use-homebrew-on-macos-to-increase-productivity-11e54b3d6d0b) that lays out some of the neat abilities of brew. Make sure to check it out.
+
+#### The Benefits
+
+Great, so now we know of Brew and how it can help us manage our installations. With Quarto specifically, because it's actively being developed and is updated so often, it ends up being kind of a PITA (pain-in-the-ass) to check the page for releases and then download and update your installation. So we can just rely on `brew` to help us do that with a single command 😃.
+
+```
+brew install --cask quarto
+```
+
+{{< elevator "Take the elevator back up?" audio=BossaBossa.mp3 >}}
+
+---
+
+<script src="https://giscus.app/client.js"
+        data-repo="phdjsep/sepd-dev"
+        data-repo-id="R_kgDOIsJ6VA"
+        data-category="General"
+        data-category-id="DIC_kwDOIsJ6VM4CTVJc"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
