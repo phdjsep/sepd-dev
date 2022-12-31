@@ -2,8 +2,8 @@
 
 
 /*-- scss:rules --*/
-#quarto-sidebar {
-    img.sidebar-logo {
-        // background: url("assets/img/sepd_dev_hex_dark.png") left top no-repeat;
-    }
+.sidebar-logo-link > img {
+    background: url("assets/img/sepd_dev_hex_dark.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }

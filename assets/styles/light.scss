@@ -4,11 +4,33 @@
 }
 
 /*-- scss:rules --*/
-
+#quarto-sidebar {
+    background-color: #f6f5f1;
+}
 // transition link hovers
 a {
     transition: 0.4s;
     -webkit-transition: 0.4s;
+}
+
+.grid {
+    margin-top: 2.5rem;
+}
+
+.quarto-grid-item {
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    border-radius: 5px;
+    .card-body {
+        background-color: #f6f5f1;
+    }
+    .card-img-top > img{
+        border-radius: 5px 5px 0 0;
+    }
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transform: scale(1.01);
+    }
 }
 
 // customize colors for LinkedIn and Github tool links
@@ -20,7 +42,7 @@ a {
         color: #000000;
     }
     display: inherit;
-    margin-top: 0;
+    // margin-top: 0;
 }
 
 // remove margin from blog post list

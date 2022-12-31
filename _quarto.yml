@@ -29,14 +29,12 @@ website:
     contents:
       - href: about.qmd
         text: About
-      - href: posts.qmd
-        text: Posts
 
 format:
   html:
     theme:
       light: [cosmo, assets/styles/light.scss]
-      # dark: [cosmo, assets/styles/dark.scss]
+      dark: [cosmo, assets/styles/dark.scss]
     code-copy: true
     code-overflow: wrap
     toc: false

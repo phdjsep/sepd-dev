@@ -3,6 +3,7 @@ title: "Welcome To My Garden 🪴"
 author: "Sep Dadsetan"
 date: "2022-12-30"
 categories: [news, tips]
+title-block-style: default
 title-block-banner: false
 comments:
   giscus: 
@@ -25,24 +26,26 @@ Not much else to say in my first post, but I want to share a tip to maybe make y
 ### Installing Quarto Using Brew
 
 #### Quarto
-If you're from the R world I'm sure you've heard of [Quarto](https://www.quarto.org) by now. In short, Quarto is a publishing system built on Pandoc that allows you to do all sorts of fun stuff and you really need to check it out. I won't go into too much detail as there are already MANY great resources online for what it is and how to use it for your needs. If there's interest, I'd be happy to cover a scenario or two, but you'll have to let me know in the comments.
+If you're from the R world I'm sure you've heard of [Quarto](https://www.quarto.org) by now. In short, Quarto is a publishing system built on Pandoc that allows you to do all sorts of fun stuff (in Python, Julia, and ObservableJS also!) and you really need to check it out. I won't go into too much detail as there are already MANY great resources online for what it is and how to use it for your needs. If there's interest, I'd be happy to cover a scenario or two, but you'll have to let me know in the comments.
 
 #### Brew
 Now let's get to the second character in our story, [Homebrew](https://brew.sh/). For those on the Mac, this is a very valuable tool to have on your machine as it helps with installing and managing a wide array of CLI (command line interface) tools as well as GUI (graphical user interface) applications. For example, if you wanted to install the RStudio IDE, rather than go to the [Posit Downloads](https://posit.co/downloads/), download the application, and install it on your machine, you could install the RStudio IDE with a simple one-line command.
 
-```
+```zsh
 brew install --cask rstudio
 ```
 
-Cool, right?! There's a [handy Medium article](https://medium.com/@aplaceofmind/8-ways-i-use-homebrew-on-macos-to-increase-productivity-11e54b3d6d0b) that lays out some of the neat abilities of brew. Make sure to check it out.
+Cool, right?! There's a [handy Medium article](https://medium.com/@aplaceofmind/8-ways-i-use-homebrew-on-macos-to-increase-productivity-11e54b3d6d0b) that lays out some of the neat abilities of brew. Make sure to check it out to get a better picture of it's power.
 
 #### The Benefits
 
-Great, so now we know of Brew and how it can help us manage our installations. With Quarto specifically, because it's actively being developed and is updated so often, it ends up being kind of a PITA (pain-in-the-ass) to check the page for releases and then download and update your installation. So we can just rely on `brew` to help us do that with a single command 😃.
+Great, so now we know of Quarto and Brew how do the two work together? As you may have guessed, we can install quarto with brew, but why do that? With Quarto specifically, because it's actively being developed and is updated so often, it ends up being kind of a PITA (pain-in-the-ass) to check the page for releases and then download and update your installation. So we can just rely on `brew` to help us do that with a single command 😃.
 
-```
+```zsh
 brew install --cask quarto
 ```
+
+Easy peasy. I hope that was a helpful tip. Let me know your thoughts in the comments. Is there a another way you manage software?
 
 {{< elevator "Take the elevator back up?" audio=BossaBossa.mp3 >}}
 
