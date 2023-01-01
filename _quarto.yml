@@ -9,10 +9,10 @@ website:
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; CC-By Sep Dadsetan, 2023"
+    left: "&copy; Sep Dadsetan, 2023"
     
   sidebar:
-    title: "Home & Garden"
+    title: "sepd.dev"
     logo: "assets/img/sepd_dev_hex.png"
     pinned: true
     align: center
@@ -28,13 +28,13 @@ website:
     collapse-level: 1
     contents:
       - href: about.qmd
-        text: About
+        text: About Me
 
 format:
   html:
     theme:
       light: [cosmo, assets/styles/light.scss]
-      dark: [cosmo, assets/styles/dark.scss]
+      # dark: [cosmo, assets/styles/dark.scss]
     code-copy: true
     code-overflow: wrap
     toc: false

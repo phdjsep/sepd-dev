@@ -4,17 +4,50 @@
 }
 
 /*-- scss:rules --*/
-#quarto-sidebar {
-    background-color: #f6f5f1;
+body {
+    background-image: url("assets/img/succulent_right_wall.png");
+    background-repeat: no-repeat;
+    background-size: 280px; 
+    background-position: bottom right;
+    background-position-y: 175px;
 }
+
+.sidebar.sidebar-navigation:not(.rollup) {
+    border-right: none !important;
+}
+
+#quarto-sidebar {
+    background-color: #FFF;
+    div.sidebar-item-container:hover, 
+    div.sidebar-item-container:focus {
+        color: #545555;
+    }
+    a.sidebar-item-text {
+        position: relative;
+        text-decoration: none;
+    }
+    a.sidebar-item-text::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #D5DEA4;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    a.sidebar-item-text:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
 // transition link hovers
 a {
     transition: 0.4s;
     -webkit-transition: 0.4s;
-}
-
-.grid {
-    margin-top: 2.5rem;
 }
 
 .quarto-grid-item {
@@ -42,13 +75,5 @@ a {
         color: #000000;
     }
     display: inherit;
-    // margin-top: 0;
 }
 
-// remove margin from blog post list
-.quarto-listing-container-default {
-    margin-right: 0;
-}
-
-// About page
-// .about-contents {}

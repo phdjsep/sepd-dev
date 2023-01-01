@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/index.html</loc>
-    <lastmod>2022-12-31T06:48:13.305Z</lastmod>
+    <lastmod>2023-01-01T23:20:32.297Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/about.html</loc>
-    <lastmod>2022-12-31T01:03:24.548Z</lastmod>
+    <lastmod>2023-01-01T23:20:41.619Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/posts/post-with-code/index.html</loc>
@@ -14,6 +14,10 @@
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/posts/welcome/index.html</loc>
-    <lastmod>2022-12-31T05:40:13.169Z</lastmod>
+    <lastmod>2023-01-01T23:16:58.591Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/posts/brew-quarto/index.html</loc>
+    <lastmod>2023-01-01T23:21:27.578Z</lastmod>
   </url>
 </urlset>

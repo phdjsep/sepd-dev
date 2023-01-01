@@ -5,7 +5,7 @@ listing:
   sort: "date desc"
   type: grid
   date-format: short
-  max-items: 2
+  max-items: 4
   categories: false
   sort-ui: false
   filter-ui: false
@@ -17,8 +17,9 @@ comments: false
 
 # Hi! I'm **Sep Dadsetan** 👋
 ### This is my digital garden where you'll find my messy musings, scribbled how-to's, random projects, and a showcase of my musical and photographic art.
-#### Currently leading Real World Data (RWD) Analytics at ConcertAI
 
+---
+### Posts ⤵️
 :::{#summary-posts}
 :::
 
