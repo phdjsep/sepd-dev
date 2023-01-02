@@ -39,5 +39,6 @@ format:
     code-overflow: wrap
     toc: false
 
-
+execute:
+  freeze: auto
   
