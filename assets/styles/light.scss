@@ -54,6 +54,9 @@ a {
     transition: 0.4s;
     -webkit-transition: 0.4s;
     border-radius: 5px;
+    .post-contents {
+        border-radius: 5px;
+    }
     .card-body {
         background-color: #f6f5f1;
     }
