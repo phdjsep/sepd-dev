@@ -1,0 +1,39 @@
+---
+title: "Version Control, {renv}, and Reproducibility"
+author: "Sep Dadsetan"
+date: "2023-08-15"
+categories: [talk]
+image: "thumb.jpg"
+title-block-style: default
+title-block-banner: false
+comments:
+  giscus: 
+    repo: phdjsep/sepd-dev
+---
+
+Had the pleasure of being invited to speak to my local Southern California RUG meeting (SoCalRUG) on version control, the renv package, and the paramount importance of reproducibility in data science. 
+
+Description from the [MeetUp](https://www.meetup.com/socal-rug/events/294932464): Join us at our upcoming meetup for an enriching session on version control, the renv package, and the paramount importance of reproducibility in data science. In this meetup, we'll delve into the fundamentals of version control with Git, empowering you to effectively manage code changes and collaborate seamlessly with others. Discover the potential of the renv package as a powerful tool for isolating and replicating R environments, ensuring your projects remain consistent and reproducible.
+
+Emphasizing the significance of reproducibility in research and analysis, we'll explore best practices and methodologies to enhance the credibility and reliability of your R projects. This event will equip you with new skills and insights to elevate your data science workflows. Don't miss out on this opportunity to engage with fellow R enthusiasts and boost your proficiency in essential data science practices. See you there!
+
+```{=html}
+<iframe width="780" height="500" align='middle'  src="presentation.html" title="Version Control, {renv}, and Reproducibility"></iframe>
+```
+
+<script src="https://giscus.app/client.js"
+        data-repo="phdjsep/sepd-dev"
+        data-repo-id="R_kgDOIsJ6VA"
+        data-category="General"
+        data-category-id="DIC_kwDOIsJ6VM4CTVJc"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>

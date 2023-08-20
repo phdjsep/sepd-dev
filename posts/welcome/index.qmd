@@ -3,6 +3,7 @@ title: "Welcome To My Garden 🪴"
 author: "Sep Dadsetan"
 date: "2022-12-30"
 categories: [news, tips]
+image: "thumb.jpg"
 title-block-style: default
 title-block-banner: false
 comments:

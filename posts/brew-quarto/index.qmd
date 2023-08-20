@@ -3,6 +3,7 @@ title: "Homebrew ☕ & Quarto"
 author: "Sep Dadsetan"
 date: "2023-1-01"
 categories: [tips]
+image: "thumb.jpg"
 title-block-style: default
 title-block-banner: false
 comments:
