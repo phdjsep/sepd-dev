@@ -75,10 +75,10 @@ a {
 
 // customize colors for LinkedIn and Github tool links
 .sidebar-title .sidebar-tools-main {
-    a.sidebar-tool[title="LinkedIn"]:hover {
+    a.quarto-navigation-tool[title="LinkedIn"]:hover {
         color: #0077B5;
     }
-    a.sidebar-tool[title="Github"]:hover {
+    a.quarto-navigation-tool[title="Github"]:hover {
         color: #000000;
     }
     display: inherit;
