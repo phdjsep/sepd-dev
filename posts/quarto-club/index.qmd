@@ -13,7 +13,7 @@ comments:
 
 You can find me in the club 🎶
 
-### Introducing Quarto Club
+### Introducing [Quarto Club](https://quarto.club)
 
 First of all, if you're new to quarto, go check out their page [Quarto](https://www.quarto.org). TONS of create documentation and examples.
 
