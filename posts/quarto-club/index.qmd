@@ -3,7 +3,7 @@ title: "Quarto Club"
 author: "Sep Dadsetan"
 date: "2023-09-26"
 categories: [news]
-image: "quarto-club-thumb.jpg"
+image: "quarto-club-thumb.png"
 title-block-style: default
 title-block-banner: false
 comments:
