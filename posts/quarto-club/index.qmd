@@ -1,0 +1,43 @@
+---
+title: "Quarto Club"
+author: "Sep Dadsetan"
+date: "2023-09-26"
+categories: [news]
+image: "quarto-club-thumb.jpg"
+title-block-style: default
+title-block-banner: false
+comments:
+  giscus: 
+    repo: phdjsep/sepd-dev
+---
+
+You can find me in the club 🎶
+
+### Introducing Quarto Club
+
+First of all, if you're new to quarto, go check out their page [Quarto](https://www.quarto.org). TONS of create documentation and examples.
+
+I created this quarto-based site back in January 2023, but before quarto many of us used the `blogdown` package to build our blog sites in R. Blogdown made nice use of [Hugo](https://gohugo.io/) and along with that came the advantage of leveraging a large collection of [themes](https://themes.gohugo.io/). This made it really nice to get inspired, use, or "piggy-back" on existing designs that the community had put together.
+
+Quarto is capable of WAY more content types than Hugo, but no doubt that websites are one of the possibilities and although there is a very nice [gallery](https://quarto.org/docs/gallery/) of community developed quarto content, I think it would be really cool to have a community-led site to help people explore and be inspired (like that hugo theme site) and be built to handle a larger number of examples.
+
+Having come back recently from always inspiring Posit::conf(2023) in Chicago, it was clear that quarto will continue to gain interest and I think this site will be a valuable asset to the quarto community.
+
+---
+
+<script src="https://giscus.app/client.js"
+        data-repo="phdjsep/sepd-dev"
+        data-repo-id="R_kgDOIsJ6VA"
+        data-category="General"
+        data-category-id="DIC_kwDOIsJ6VM4CTVJc"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
