@@ -1,0 +1,67 @@
+---
+title: "Running LLMs Locally"
+author: "Sep Dadsetan"
+date: "2024-12-12"
+categories: [tips, llm, ai]
+image: "thumb.jpg"
+title-block-style: default
+title-block-banner: false
+comments:
+  giscus: 
+    repo: phdjsep/sepd-dev
+---
+
+I've been following and using LLM's since the release of ChatGPT a couple years ago now. The space grows at such a crazy pace that it's hard to keep up. I have no doubt these technologies will be sticking around, but being security-aware like I am, I can't say I'm thrilled at all the data these companies get to collect through our interactions with their platforms. 
+
+Wouldn't it be great to just run the LLM locally? Well, I tried this some time ago when ollama was announced, but it wasn't too helpful. Was slow and the model sizes were huge. I've recently revisited this and very happy to see that both setup and operations are more easier and performant! It's really quite easy to setup and I just wanted to list out the steps I took to get things working.
+
+### Installing Ollama
+
+#### What is Ollama?
+Ollama is a software platform that enables users to run large language models (LLMs) directly on their local machines, providing greater control over data privacy and reducing reliance on cloud-based services. It supports various open-source models, including Llama 3.3, Mistral, Phi 3, and Gemma 2, and is compatible with macOS, Linux, and Windows operating systems.
+
+#### Installation
+1. Go to the (ollama)[https://ollama.com/] website and download
+2. Follow the prompts to install the tool
+3. From there it's really easy to pull a model and start using it. They have a list (here)[https://ollama.com/search]
+
+#### Models
+Some tips on the models, there are many different types from vision to tools. You'll likely want a "tools" model. Also, the smaller "b" number means that the size of the model (in terms of disk space) is smaller. So "70b" is larger than "3b". These details can be found under each model in the url provided.
+
+To pull a model, mistral for example:
+```zsh
+ollama pull mistral
+```
+
+Of the models I tried, I'm impressed by the mistral 3b model. It's tiny, but really quite accurate and performative in comparison to the llama models. The beauty of these is that you can pretty quickly pull others down and try out for yourself.
+
+That's really it to get ollama working in your terminal, but what if you want to up your chat experience?
+
+### Open Web UI
+
+"Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI interface designed to operate entirely offline. It supports various LLM runners, including Ollama and OpenAI-compatible APIs."
+
+Basically some really smart people built an app that fairly automagically interacts with any local models so that you can chat with them as if you were talking to ChatGPT online.
+
+[https://docs.openwebui.com/](https://docs.openwebui.com/)
+
+It's fairly straight-forward to download and get running. Follow the instructions provided and reach out if you have any questions.
+
+---
+
+<script src="https://giscus.app/client.js"
+        data-repo="phdjsep/sepd-dev"
+        data-repo-id="R_kgDOIsJ6VA"
+        data-category="General"
+        data-category-id="DIC_kwDOIsJ6VM4CTVJc"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
