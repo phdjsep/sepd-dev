@@ -11,7 +11,7 @@ website:
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; Sep Dadsetan, 2023"
+    left: "&copy; Sep Dadsetan, 2025"
     
   sidebar:
     logo: "assets/img/sepd_dev_hex.png"
@@ -30,6 +30,8 @@ website:
     contents:
       - href: about.qmd
         text: About Me
+      - href: cv.qmd
+        text: CV
 
 format:
   html:

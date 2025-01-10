@@ -1,0 +1,95 @@
+---
+title: "Curriculum Vitae"
+format:
+  html:
+    toc: true
+  pdf:
+    author: Sep Dadsetan
+    pdf-engine: weasyprint
+css: cv.css
+format-links: [pdf]
+---
+
+::: {.print-only .contact-block}
+phdjsep@gmail.com
+:::
+
+Strategic thinker with a strong background in analytics and data science. Proven experience in defining and implementing big data strategies, leading cross-functional teams, and improving business performance through data-driven insights. Adept at managing data science teams, developing centralized analytics solutions, and eﬀectively communicating findings to senior stakeholders.
+
+## PROFESSIONAL EXPERIENCE
+
+**ConcertAI** -- *Executive Director, RWD Analytics* <br>
+[*Feb 2021 -- Nov 2024*]{.cvdate}
+
+- Thought Leadership: Spearheaded data and analysis topics across the RWE business unit, driving quality and innovation.
+- Cross-functional Leadership: Led a cross-functional team to create an industry-first data product delivery platform, resulting in increased revenue generation and improved customer satisfaction.
+- Centralized Analytics Solution: Developed a centralized analytics solution to improve reproducibility and scalability among multiple internal analytical and data science teams.
+- Vendor Management: Successfully sourced and managed third-party vendors to augment business unit
+objectives, ensuring alignment with strategic goals.
+- Internal Tooling: Led eﬀorts in building internal tools to democratize data access, enhance data quality control, and provide stakeholders with up-to-date results for informed decision-making.
+- Best Practices: Formulated best practices for governance, onboarding, data access, analytical data
+pipelines, and reporting, standardizing activities across multiple teams.
+- Competitive Analysis: Comprehensively understood the portfolios and actions of competitors, succinctly communicating strategic implications to executive stakeholders.
+- Business Performance Improvement: Executed and identified opportunities to continuously improve the
+company’s business performance measurement process.
+- External Partnerships: Identified opportunities to partner with external entities on technologies that facilitate patient diagnosis, expanding the company’s technological capabilities.
+- Eﬀective Communication: Eﬀectively communicated findings and strategic insights to senior-level
+stakeholders, influencing decision-making processes.
+
+**Kite Pharma** -- *Associate Director, R&D IT* <br>
+[*Jun 2019 -- Feb 2021*]{.cvdate}
+
+- Helped define strategic priorities and supported technology, digital, and data transformations across Kite’s
+Research and Development organizations.
+- Mobilized resources across both Kite and Gilead to enable delivery of solutions including design and implementation of new capabilities from Bioinformatics to Real World Evidence.
+- Lead and managed the implementation of a scalable, cloud-based analytical platform which improved
+computational capabilities, analytical reproducibility, and provided a platform for deployment of apps.
+- Worked with executive leadership in a variety of capacities to develop, prioritize, and execute long-term enterprise strategies
+
+**Syapse** -- *Clinical Data Science Manager* <br>
+[*Jan 2017 -- Mar 2019*]{.cvdate}
+
+- Partnered with internal engineers, physicians, informaticists, and epidemiologists to deliver clinical insight using Real World Data (RWD) leading to bookings over $20M
+- Managed team of 5 in helping deliver patient matching to healthcare providers, pharmaceutical, and
+insurance companies globally using electronic medical records (EMR) and genomic data.
+- Created and scaled entirely new clinical analytics group; developing structure, procedures, and tooling for analysis and expansion.
+- Curated, cleaned, and analyzed complex data from medical records, next-gen sequencing reports, and
+clinical labs from multiple EMRs across multiple US health systems to assist with clinical decision support and insights features in our application.
+- Frequently created dashboards and tools for internal data exploration needs in Tableau and R Shiny.
+
+## EDUCATION{style="page-break-before: always"}
+
+**Doctor of Philosophy -- Molecular, Cellular, and Integrative Physiology** <br> *University of California, Davis* [*2009*]{.cvdate}
+
+**Bachelor of Science -- Genetics** <br> *University of California, Davis* [*2003*]{.cvdate}
+
+## PUBLICATIONS
+
+1. Thakur P, Dadsetan S, Fomina AF. **Bidirectional coupling between ryanodine receptors and Ca2+
+activated Ca<sup>2+</sup> (CRAC) channel machinery sustains store-operated Ca<sup>2+</sup> release-entry in human T lymphocytes.** *J Biol Chem.* 2012 Oct 26;287(44):37233-44.
+
+2. Zakharova L, Dadsetan S, Fomina AF. **Endogenous Jmjd6 gene product is expressed at the cell surface and regulates phagocytosis in immature monocyte-like activated THP-1 cells.** *J Cell Physiol.* 2009 Oct;221(1):84-91
+
+3. Chen H, Dadsetan S, Fomina AF, Gong Q. **Expressing exogenous functional odorant receptors in
+cultured olfactory sensory neurons.** *Neural Dev.* 2008 Sep 11;3:22
+
+4. Dadsetan S, Zakharova L, Molinski TF, Fomina AF. **Store-operated Ca<sup>2+</sup>
+influx causes Ca<sup>2+</sup> release from the intracellular Ca<sup>2+</sup> channels that is required for T cell activation.** *J Biol Chem.* 2008 May 2;283(18):12512-9
+
+5. Dadsetan S, Shiskin V., Fomina AF. **Intracellular Ca<sup>2+</sup> release triggers translocation of membrane marker FM1-43 from the extracellular leaflet of plasma membrane into endoplasmic reticulum in T lymphocytes.** *J Biol Chem.* 2005 Apr 22;280(16):16377-82
+
+::: {.no-print}
+## PRESENTATIONS, WORKSHOPS, ARTICLES
+
+-   Talk: [CONNECTing with our clients](https://www.youtube.com/watch?v=ctv0jOV8AXs) (Aug 2024, posit::conf(2024))
+-   Workshop: [Introduction to Git and Github for Data Science](https://www.linkedin.com/posts/socalrug_introduction-to-git-and-github-activity-7168068276516798466-6opD) (March 2024)
+-   Talk: [Version Control, renv, and Reproducibility](https://sepd.dev/posts/reproducibility/) (Aug 2023, Southern California RUG)
+-   Article: [Career Development with Data Science Leaders](https://www.stat.uci.edu/mds-program-hosts-panel-discussion-on-career-development-with-data-science-leaders/) (May 2022, UCI Department of Statistics)
+-   Talk: [Infrastructure that Encourages Reproducibility](https://posit.co/data-science-hangout/04-sep-dadsetan/) (Posit - Data Science Hangout, July 2021)
+:::
+
+## EXTRACURRICULAR INTERESTS
+• Front-end web development, mobile app development - built my own footgolf scoring app (Skorkard)
+• Competitive Footgolf - Coach of US Footgolf team at 2018 World Cup in Morocco (3rd place)
+• Contributor to local R community (Southern California R Users Group) and online R community.
+• Professional DJ (15 years)
