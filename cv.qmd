@@ -89,6 +89,7 @@ influx causes Ca<sup>2+</sup> release from the intracellular Ca<sup>2+</sup> cha
 :::
 
 ## EXTRACURRICULAR INTERESTS
+
 • Front-end web development, mobile app development - built my own footgolf scoring app (Skorkard)
 • Competitive Footgolf - Coach of US Footgolf team at 2018 World Cup in Morocco (3rd place)
 • Contributor to local R community (Southern California R Users Group) and online R community.
