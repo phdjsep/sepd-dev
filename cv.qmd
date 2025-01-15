@@ -6,7 +6,7 @@ format:
   pdf:
     author: Sep Dadsetan
     pdf-engine: weasyprint
-css: cv.css
+css: "assets/styles/cv.css"
 format-links: [pdf]
 ---
 
@@ -18,8 +18,7 @@ Strategic thinker with a strong background in analytics and data science. Proven
 
 ## PROFESSIONAL EXPERIENCE
 
-**ConcertAI** -- *Executive Director, RWD Analytics* <br>
-[*Feb 2021 -- Nov 2024*]{.cvdate}
+**ConcertAI** -- *Executive Director, RWD Analytics* [Feb 2021 -- Nov 2024]{.cvdate}
 
 - Thought Leadership: Spearheaded data and analysis topics across the RWE business unit, driving quality and innovation.
 - Cross-functional Leadership: Led a cross-functional team to create an industry-first data product delivery platform, resulting in increased revenue generation and improved customer satisfaction.
@@ -36,8 +35,7 @@ company’s business performance measurement process.
 - Eﬀective Communication: Eﬀectively communicated findings and strategic insights to senior-level
 stakeholders, influencing decision-making processes.
 
-**Kite Pharma** -- *Associate Director, R&D IT* <br>
-[*Jun 2019 -- Feb 2021*]{.cvdate}
+**Kite Pharma** -- *Associate Director, R&D IT* [Jun 2019 -- Feb 2021]{.cvdate}
 
 - Helped define strategic priorities and supported technology, digital, and data transformations across Kite’s
 Research and Development organizations.
@@ -46,8 +44,7 @@ Research and Development organizations.
 computational capabilities, analytical reproducibility, and provided a platform for deployment of apps.
 - Worked with executive leadership in a variety of capacities to develop, prioritize, and execute long-term enterprise strategies
 
-**Syapse** -- *Clinical Data Science Manager* <br>
-[*Jan 2017 -- Mar 2019*]{.cvdate}
+**Syapse** -- *Clinical Data Science Manager* [Jan 2017 -- Mar 2019]{.cvdate}
 
 - Partnered with internal engineers, physicians, informaticists, and epidemiologists to deliver clinical insight using Real World Data (RWD) leading to bookings over $20M
 - Managed team of 5 in helping deliver patient matching to healthcare providers, pharmaceutical, and

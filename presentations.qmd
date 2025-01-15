@@ -1,0 +1,14 @@
+---
+title: "Presentations, Talks, Workshops"
+about:
+  template: solana
+format:
+  html:
+    css: 'assets/styles/styles.css'
+---
+
+-   Talk: [CONNECTing with our clients](https://www.youtube.com/watch?v=ctv0jOV8AXs) (Aug 2024, posit::conf(2024))
+-   Workshop: [Introduction to Git and Github for Data Science](https://www.linkedin.com/posts/socalrug_introduction-to-git-and-github-activity-7168068276516798466-6opD) (March 2024)
+-   Talk: [Version Control, renv, and Reproducibility](https://sepd.dev/posts/reproducibility/) (Aug 2023, Southern California RUG)
+-   Article: [Career Development with Data Science Leaders](https://www.stat.uci.edu/mds-program-hosts-panel-discussion-on-career-development-with-data-science-leaders/) (May 2022, UCI Department of Statistics)
+-   Talk: [Infrastructure that Encourages Reproducibility](https://posit.co/data-science-hangout/04-sep-dadsetan/) (Posit - Data Science Hangout, July 2021)

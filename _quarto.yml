@@ -30,6 +30,8 @@ website:
     contents:
       - href: about.qmd
         text: About Me
+      - href: presentations.qmd
+        text: Presentations
       - href: cv.qmd
         text: CV
 
