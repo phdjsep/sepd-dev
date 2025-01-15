@@ -16,7 +16,7 @@ phdjsep@gmail.com
 
 Strategic thinker with a strong background in analytics and data science. Proven experience in defining and implementing big data strategies, leading cross-functional teams, and improving business performance through data-driven insights. Adept at managing data science teams, developing centralized analytics solutions, and eﬀectively communicating findings to senior stakeholders.
 
-## PROFESSIONAL EXPERIENCE
+### PROFESSIONAL EXPERIENCE
 
 **ConcertAI** -- *Executive Director, RWD Analytics* [Feb 2021 -- Nov 2024]{.cvdate}
 
@@ -54,13 +54,13 @@ insurance companies globally using electronic medical records (EMR) and genomic 
 clinical labs from multiple EMRs across multiple US health systems to assist with clinical decision support and insights features in our application.
 - Frequently created dashboards and tools for internal data exploration needs in Tableau and R Shiny.
 
-## EDUCATION{style="page-break-before: always"}
+### EDUCATION{style="page-break-before: always"}
 
 **Doctor of Philosophy -- Molecular, Cellular, and Integrative Physiology** <br> *University of California, Davis* [*2009*]{.cvdate}
 
 **Bachelor of Science -- Genetics** <br> *University of California, Davis* [*2003*]{.cvdate}
 
-## PUBLICATIONS
+### PUBLICATIONS
 
 1. Thakur P, Dadsetan S, Fomina AF. **Bidirectional coupling between ryanodine receptors and Ca2+
 activated Ca<sup>2+</sup> (CRAC) channel machinery sustains store-operated Ca<sup>2+</sup> release-entry in human T lymphocytes.** *J Biol Chem.* 2012 Oct 26;287(44):37233-44.
@@ -76,7 +76,7 @@ influx causes Ca<sup>2+</sup> release from the intracellular Ca<sup>2+</sup> cha
 5. Dadsetan S, Shiskin V., Fomina AF. **Intracellular Ca<sup>2+</sup> release triggers translocation of membrane marker FM1-43 from the extracellular leaflet of plasma membrane into endoplasmic reticulum in T lymphocytes.** *J Biol Chem.* 2005 Apr 22;280(16):16377-82
 
 ::: {.no-print}
-## PRESENTATIONS, WORKSHOPS, ARTICLES
+### PRESENTATIONS, WORKSHOPS, ARTICLES
 
 -   Talk: [CONNECTing with our clients](https://www.youtube.com/watch?v=ctv0jOV8AXs) (Aug 2024, posit::conf(2024))
 -   Workshop: [Introduction to Git and Github for Data Science](https://www.linkedin.com/posts/socalrug_introduction-to-git-and-github-activity-7168068276516798466-6opD) (March 2024)
@@ -85,7 +85,7 @@ influx causes Ca<sup>2+</sup> release from the intracellular Ca<sup>2+</sup> cha
 -   Talk: [Infrastructure that Encourages Reproducibility](https://posit.co/data-science-hangout/04-sep-dadsetan/) (Posit - Data Science Hangout, July 2021)
 :::
 
-## EXTRACURRICULAR INTERESTS
+### EXTRACURRICULAR INTERESTS
 
 - Front-end web development, mobile app development - built my own footgolf scoring app (Skorkard)
 - Competitive Footgolf - Coach of US Footgolf team at 2018 World Cup in Morocco (3rd place)
