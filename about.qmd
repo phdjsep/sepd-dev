@@ -7,12 +7,32 @@ format:
     css: 'assets/styles/styles.css'
 ---
 
-Whoa, you're reading my "About" page? I'm flattered. Hopefully you get to learn a little more about me AND not fall asleep in the process (unless this is somehow part of your bedtime routine 😴).
+Hello! I'm Sep, currently Director, RWD Analytics at Labcorp. I have over 12 years of experience in analytics, engineering, and real-world data. I thrive in fast-paced, innovation-driven industries where I can apply my generalist skills to solve complex problems and create value.
 
-### My Interests
-Quite honestly there isn't much that I'm not interested in. I find there's something to learn from pretty much everyone, everything, and every scenario. If I were to choose some major themes however, they would be **biology**, **technology**, and **music**. 
+## My Background
 
-### Where It Started
-From an early age (about 5 years old), I knew I wanted to be a scientist. The declaration came while in Yosemite. My Mom and her best friend were getting ready for a wedding. I was sitting on the bed intently watching the Discovery Channel when my Mom’s friend turned to me and asked, “I have a favor to ask you. Will you be the ring bearer?”. After a few seconds of thought, I cried and vehemently declared that I did not want to be a ring bearer and that, “I want to be a scientist!”. It was of course explained to me that the role was temporary and I could pursue both, so I graciously accepted the temporary ring bearer role. 😆
+I hold a B.S. degree in Genetics and a Ph.D. in Molecular, Cellular, and Integrative Physiology from UC Davis (Go Aggies!), and my career has spanned Life Sciences, Pharma, Technology companies. 
 
-A little later, around 7th grade (~ 1993), was when I decided I was going to study genetics in college. The [Human Genome Project](https://www.genome.gov/human-genome-project) was underway and this cool frontier of understanding our DNA was captivating to me. I was fortunate enough to hold on to that dream and receive my B.S. in Genetics from UC Davis in 2003 and pseudo-fulfill my aspirations of becoming a scientist. ❤️
+## What I Do
+
+I specialize in blending technical expertise with strategic thinking to solve complex problems and drive impact. Over the years, my work has focused on:
+
+- **Real-World Data Analytics**: Leveraging structured and curated data, including EMR, claims, and genomic/biomarker datasets, to generate actionable insights. I support teams in clinical effectiveness studies, patient cohort characterization, and treatment journey mapping, enabling data-driven decisions that improve patient outcomes and operational efficiency.
+
+- **Leadership and Cross-Functional Collaboration**: Defining organizational data strategies and aligning stakeholders across business and technical teams. I lead initiatives that prioritize high-impact use cases and deliver innovative, data-driven solutions while fostering collaboration across diverse teams.
+
+- **Insights and Analytics for Strategic Decision-Making**: Translating complex data into clear, actionable insights for clinical trial planning, business performance improvement, and strategic growth. My work involves developing analytics frameworks, uncovering opportunities, and effectively communicating findings to senior stakeholders to influence high-level decisions.
+
+These areas of expertise allow me to navigate the intersection of data, technology, and strategy, delivering solutions that create value for organizations and the people they serve.
+
+## My Interests
+
+I'm passionate about technology, health, and storytelling to tackle challenges in oncology (and other meaningful domains). Outside of work, I enjoy spending time with my family, dj'ing, and playing footgolf.
+
+## Let's Connect
+
+If you're interested in collaborating or learning more about my work, feel free to reach out! You can find me on:
+
+- **[LinkedIn](https://www.linkedin.com/in/sepdadsetan/)**  
+
+Thanks for stopping by!
