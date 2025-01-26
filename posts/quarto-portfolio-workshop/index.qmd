@@ -1,0 +1,127 @@
+---
+title: "January 2025 Portfolio Workshop"
+author: "Sep Dadsetan"
+date: "2025-01-27"
+categories: [tips, quarto, workshop]
+image: "thumb.jpg"
+title-block-style: default
+title-block-banner: false
+comments:
+  giscus: 
+    repo: phdjsep/sepd-dev
+---
+
+## Welcome to the Workshop!
+
+Below you'll find helpful links that will be referenced throughout the workshop. These are handy to have on hand so you can quickly access the resources.
+
+::: {.callout-note}
+The following "Workshop Setup" will be covered in class, but keep this handy for reference.
+:::
+
+## Workshop Setup
+
+### Setup Walkthrough
+<details>
+  <summary>Click to expand/collapse</summary>
+  
+  1. Login in to your Github account
+
+2. Navigate to the following template repo [Repo Template](https://github.com/phdjsep/gh-pages-quarto-portfolio-template)
+
+3. Click on "Use this template" -> "Create new repo"
+
+4. In "Repository name", give it the following `<username>.github.io`
+
+5. "Create Repository"
+
+6. Launch codespace (this will take a ~2.5 minutes)
+
+7. Once ready...check that quarto is installed -> in terminal `quarto --version`
+
+8. If good, type `quarto create` and you will see something like below:
+
+```bash
+(base) > quarto create
+? Create › project
+? Type › website
+? Directory › ./
+? Title (./) › "<Enter a title for your site>"
+Creating project at ...:
+  - Created _quarto.yml
+  - Created index.qmd
+  - Created about.qmd
+  - Created styles.css
+```
+
+9. Run `quarto preview` to see a preview of your basic site!
+  
+</details>
+
+
+### Publishing Your Site 
+
+<details>
+    <summary>Click to expand/collapse</summary>
+
+We need to setup the Github repo to render the site from the `gh_pages` branch.
+
+If it's a fresh repository, you won't have a `gh_pages` branch.
+So, first we need to create an empty one. To do so, run the following code:
+
+```bash
+git checkout --orphan gh-pages
+git reset --hard # make sure all changes are committed before running this!
+git commit --allow-empty -m "Initialising gh-pages branch"
+git push origin gh-pages
+```
+
+- After you finish this, go back to the main branch by running `git checkout main`.
+This must be completed **before** you run `quarto publish`!
+
+- Go to our Repo -> "Settings" -> Pages -> Create from branch and make sure `gh-pages` is selected.
+
+Ta-da! 🎉 Site is published!
+
+</details>
+
+
+## Resources
+
+- [Quarto Site](https://quarto.org)
+- [Github](https://www.github.com)
+- [Markdown](https://www.markdownguide.org/)
+- [qmdclub.com](https://www.qmdclub.com)
+- [Awesome Quarto](https://github.com/mcanouil/awesome-quarto)
+- [Buy your own domain at Hover](https://hover.com/uYAUiF80)
+- [Happy git and Github for the useR](https://happygitwithr.com/)
+
+## Groups
+
+- [SoCalRUG](https://www.meetup.com/socal-rug/)
+
+## People
+
+- [Sep Dadsetan](https://www.linkedin.com/in/sepdadsetan/)
+- [Rebecca Butler](https://www.linkedin.com/in/rebecca-butler-4b0166a0/)
+- [Pablo Barajas](https://www.linkedin.com/in/pabloibarajas/)
+- [Javier Orraca-Deatcu](https://www.linkedin.com/in/orraca/)
+
+---
+
+<script src="https://giscus.app/client.js"
+        data-repo="phdjsep/sepd-dev"
+        data-repo-id="R_kgDOIsJ6VA"
+        data-category="General"
+        data-category-id="DIC_kwDOIsJ6VM4CTVJc"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
