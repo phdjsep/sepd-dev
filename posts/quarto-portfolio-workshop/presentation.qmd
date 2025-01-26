@@ -1,0 +1,726 @@
+---
+format: 
+  revealjs:
+    embed-resources: true
+    theme: 'solarized'
+    slide-number: c/t
+    code-copy: true
+    center-title-slide: false
+    code-link: true
+    code-overflow: wrap
+    highlight-style: a11y
+    height: 1080
+    width: 1920
+execute: 
+  eval: true
+  echo: true
+---
+
+<h1> Portfolio Building Workshop</h1>
+
+<hr>
+
+<h3> Instructor: [Sep Dadsetan, PhD](https://sepd.dev) </h3>
+<h3> 2025-01-27 </h3>
+<h4>Sponsored by SoCal RUG</h4>
+<br>
+
+![](images/github_hex.png){.absolute top=480 left=1250 width="300"}
+![](images/quarto_hex.png){.absolute top=220 left=1100 width="300"}
+
+
+# Introduction
+
+General overview of today's agenda:
+
+  - Introduction
+  - Quarto Basics
+  - Building the Portfolio Website
+  - Publishing and Maintaining the Website
+  - Closing
+
+
+## Welcome! Meet Your Workshop Facilitator
+
+#### **My Role**
+
+- Director, RWD Analytics @ Labcorp
+
+#### **My Expertise**  
+
+- I've been a developer since 2000 (HTML/CSS/JS)
+- Got into Data Science in 2014
+- I've had a website (of some shape or form) since 2000
+
+#### **My Passion**  
+- Passionate about helping others be their best selves
+
+#### **Fun Fact**  
+- I was a professional DJ for 15 years
+
+## Meet your TAs
+
+- Rebecca Butler
+- Pablo Barajas
+- Javier Orraca-Deatcu
+
+*We're excited to guide you through creating an impressive portfolio!*
+
+
+## Why Create a Portfolio Site?
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **1. Showcase Your Skills**
+- Highlight your expertise, projects, and accomplishments.
+- Provide concrete examples of your work (e.g., code, visualizations, reports).
+- *Fun place to play with ideas and technologies*
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **2. Build Your Personal Brand**
+- Stand out in a competitive job market.
+- Share your unique style and professional story.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **3. Increase Visibility**
+- Make it easy for recruiters, clients, or collaborators to find you.
+- Share your work with a broader audience online.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **4. Demonstrate Technical Proficiency**
+- Showcase your ability to use tools like Quarto, R Markdown, or web development skills.
+- Prove your commitment to staying current with industry standards.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **5. Foster Networking Opportunities**
+- Connect with like-minded professionals and potential collaborators.
+- Provide a professional platform to engage with others in your field.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+*"Your portfolio is more than a website—it's your professional handshake in the digital world."*
+
+:::
+
+## Different Ways You Could Build a Portfolio
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **1. Quarto**
+- Use Quarto to create an interactive, reproducible portfolio.  
+- Embed code, visualizations, and analysis directly into your site.  
+- Publish easily with platforms like GitHub Pages or Netlify.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **2. Static Site Generators**
+- Use tools like Jekyll, Hugo, or Gatsby.  
+- Build fully customizable sites with Markdown and templates.  
+- Great for those comfortable with web development.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **3. Custom HTML/CSS/JavaScript**
+- Build a website from scratch for maximum control.  
+- Showcase your web development skills alongside your data work.  
+- Time-intensive but highly customizable.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **4. Blogging Platforms**
+- Use platforms like Medium or WordPress.  
+- Share insights and projects in an easy-to-publish format.  
+- Limited customization but great for reaching a broad audience.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **5. Interactive Notebooks**
+- Share work through Jupyter or R Markdown notebooks.  
+- Use platforms like nbviewer or GitHub to host them.  
+- Quick and simple, but not ideal for a polished portfolio.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+*"From Quarto to custom development, the right tool depends on your goals, technical skills, and the story you want to tell."*
+:::
+
+## Why Should You Choose Quarto?
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **1. Seamless Integration with Data Science Tools**
+- Works natively with Python, R, and Julia.  
+- Embed code, visualizations, and results directly into your portfolio.  
+- Supports popular libraries like Pandas, ggplot2, and Plotly.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **2. Reproducible Workflows**
+- Ensure your analysis is transparent and reproducible.  
+- Showcase data workflows where code and results are linked.  
+- Ideal for sharing professional, credible projects.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **3. Markdown Simplicity with Customization**
+- Write your site in plain Markdown for simplicity.  
+- Customize themes and layouts to match your personal brand.  
+- Flexible yet beginner-friendly.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **4. Interactive and Dynamic Content**
+- Embed interactive plots and dashboards to engage visitors.  
+- Include JavaScript or advanced visualizations to elevate your projects.  
+- Perfect for data-rich portfolios.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **5. Simple Deployment**
+- Publish easily with GitHub Pages, Netlify, or Vercel.  
+- Clear deployment workflows reduce technical overhead.  
+- Focus on content, not complex setups.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+*"Quarto enables data scientists to create professional, interactive, and reproducible portfolios with ease—showcasing both technical skill and storytelling ability."*
+
+- You can find all the info you need at - [quarto.org](quarto.org)
+- Some Quarto Inspo - [qmdclub.com](qmdclub.com)
+:::
+
+
+
+# Setting up your environment
+
+## Our Tech Stack 
+
+### For today...
+
+- **You must have a Github account. Please create one if you don't.**
+- We'll be using Github Codespaces with VS Code
+- Everything will be pre-installed for you already
+
+### For future reference however...
+
+If you were to explore doing this on your own, you'd need the following at least:
+
+- IDE (ex, VS Code, RStudio Desktop, Positron, etc)
+- Python, R, and/or Julia
+- Quarto
+- Cloud Version Control is highly recommended (eg, Github, GitLab, Bitbucket, etc)
+- You could also just continue to use your codespace...
+
+## Setup Walkthrough 
+
+Follow along closely so no one gets lost. We're going to do this together. 🫱🏼‍🫲🏾
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+1. Login in to your Github account
+:::
+:::{.fragment .fade-in-then-out .absolute top=400}
+2. Navigate to the following template repo [https://github.com/phdjsep/gh-pages-quarto-portfolio-template](https://github.com/phdjsep/gh-pages-quarto-portfolio-template)
+:::
+:::{.fragment .fade-in-then-out .absolute top=400}
+3. Click on "Use this template" -> "Create new repo"
+:::
+:::{.fragment .fade-in-then-out .absolute top=400}
+4. In "Repository name", give it the following `<username>.github.io`
+:::
+:::{.fragment .fade-in-then-out .absolute top=400}
+5. "Create Repository"
+:::
+:::{.fragment .fade-in-then-out .absolute top=400}
+6. Launch codespace (this will take a ~2.5 minutes)
+:::
+:::{.fragment .fade-in-then-out .absolute top=400}
+7. Once ready...check that quarto is installed -> in terminal `quarto --version`
+:::
+:::{.fragment .fade-in-then-out .absolute top=300}
+8. If good, type `quarto create` and you will see something like below:
+
+```bash
+(base) > quarto create
+? Create › project
+? Type › website
+? Directory › ./
+? Title (./) › "<Enter a title for your site>"
+Creating project at ...:
+  - Created _quarto.yml
+  - Created index.qmd
+  - Created about.qmd
+  - Created styles.css
+```
+:::
+:::{.fragment .fade-in-then-out .absolute top=400}
+9. Run `quarto preview` to see a preview of your basic site!
+:::
+
+
+## Quarto Basics
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **1. A Quarto Document**
+- Understand the basic structure:
+  - **YAML Header**: Define metadata like title, author, and output format.
+  - **Markdown Content**: Write text, headings, lists, and other content.
+  - **Code Chunks**: Embed and execute code directly in your document.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **2. Writing Content**
+- Add rich content to your document:
+  - **Text**: Use plain Markdown for simplicity.
+  - **Images and Links**: Embed visuals and connect to external resources.
+  - **Formatting**: Create headings, bullet points, and numbered lists for structure.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **3. Adding Code and Visualizations**
+- Showcase your technical skills:
+  - **Embed Code**: Use R, Python, or Julia directly in code chunks.
+  - **Visualizations**: Create interactive plots or static charts.
+  - **Tables**: Display data in a clean, professional format.
+:::
+
+
+## The Quarto Development Flow
+
+#### **1. Write Code**
+- Begin by writing content in a `.qmd` file using Markdown.  
+
+#### **2. Preview**
+- Use `quarto preview` to see a live preview of your document.  
+
+#### **3. Revise**
+- Identify areas for improvement in content, formatting, or visualizations.  
+
+#### **4. Render**  
+- Use `quarto render` to generate the output.
+
+#### **5. Publish**
+- Share your work with the world!
+
+
+## Quarto Hands-on Walkthrough
+
+Let's take an introductory stroll through Quarto!
+
+
+# Portfolio Site Structure
+
+## Components of Your Portfolio Website
+
+At a minimum, your portfolio website should include:
+
+- **Home/About Me page**: A quick introduction to who you are and what you do.
+- **Links to other profiles**: Provide easy access to your LinkedIn, GitHub, or other professional profiles.
+- **Downloadable Resume**: Include a link to a PDF version of your resume.
+- **Projects Page**: Showcase a list of your projects with brief descriptions and links.
+
+### Additional Features to Consider
+
+- **Blog**: Share insights, tutorials, or updates about your work and interests.
+- **Hobbies Page**: Add a personal touch by sharing your hobbies or interests.
+
+## Where to Start
+
+### Biographical Blurb
+
+- **Who are you?**: Introduce yourself and your background.
+- **Where did you come from?**: Share a bit about your journey.
+- **What is your personal mission and vision?**:
+  - Mission: What do you do now?
+  - Vision: Who do you aspire to become?
+
+### Projects
+
+- **List of Projects**: Highlight key projects you’ve worked on.
+- **Short Descriptions**: Provide a brief overview of each project and its purpose.
+- **Visuals**: Include photos, screenshots, or videos to make your projects stand out.
+
+
+## The Basic Structure of a Quarto Site
+
+::::: {.columns}
+::: {.column width="40%"}
+### Key Components:
+- **`_quarto.yml`**: The configuration file that defines your site's structure and settings.
+- **`index.qmd`**: The homepage of your site.
+- **Other pages and folders**: Additional pages (`about.qmd`, `blog.qmd`) and resources (e.g., images, styles).
+- **Assets**: Folders for stylesheets, images, or other resources (e.g., `styles.css`, `assets/`).
+:::
+
+::: {.column width="60%"}
+```yaml
+project:
+  type: website
+
+website:
+  title: "Quarto Portfolio Website"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects/
+        text: Projects
+      - href: blog.qmd
+        text: Blog
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+```
+:::
+:::::
+
+
+# Customizing
+
+## Customizing your site
+
+Next, we'll customize the site.
+
+- Modify file structure to add pages.
+- Modify `_quarto.yml`
+
+## Modifying the file structure
+
+
+::::: {.columns}
+::: {.column}
+
+::: {.r-fit-text}
+You can organize your files however you would like, but choosing a regular file structure will be very helpful.
+I recommend the following general structure.
+
+- `.gitignore` file: Includes the files to leave untracked in version control.
+- `blog.qmd`: will load blog post from `posts/` folder
+- `_site/`: auto-generated by Quarto, you don't need to create this folder. You should add it to your `.gitignore`.
+- `projects/`: folder to organize projects.
+- `projects/index.qmd`: page to display and list projects.
+- `images/`: folder(s) to store images for your site and pages. Best to keep organized in the relevant folder (e.g., per project).
+:::
+
+:::
+::: {.column}
+
+**Sample project directory structure**
+
+```bash
+├── .gitignore
+├── README.md
+├── _quarto.yml
+├── _site
+│   └── ...
+├── blog.qmd
+├── images
+│   └── headshot.jpeg
+├── index.qmd
+├── posts
+│   └── first-post.qmd
+├── projects
+│   ├── example-project-1
+│   │   ├── images
+│   │   │   └── my_cat.jpeg
+│   │   └── index.qmd
+│   ├── example-project-2
+│   │   ├── images
+│   │   └── index.qmd
+│   ├── index.qmd
+│   └── template
+│       ├── images
+│       └── index.qmd
+```
+:::
+:::::
+
+## Creating your homepage
+
+::::: {.columns}
+::: {.column}
+- Open `index.qmd` at the project root. This is your homepage.
+- Create the following frontmatter structure, replacing the information with yours.
+- Write a brief biographical blurb for yourself (you can easily change this later).
+- Run `quarto preview` to check your updates.
+:::
+::: {.column}
+
+```yaml
+---
+title: "Your Name"
+image: images/headshot.jpeg # replace with the link to your headshot
+about:
+  template: jolla # see additional templates here https://quarto.org/docs/websites/website-about.html
+  links:  # add links to your various social profiles
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/<yourhandle>
+    - icon: github
+      text: Github
+      href: https://github.com/<yourhandle>
+---
+
+Enter your biography blurb here.
+```
+:::
+:::::
+
+
+## Add a Project Page
+
+Let’s add a project page to showcase a basic data science project.
+
+### Steps:
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+1. **Create a Subfolder**:  
+   Inside the `projects/` folder, create a new subfolder named after your project (e.g., `iris`). Avoid spaces in the folder name.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+2. **Add Supporting Files**:  
+   Inside your new project folder, add:
+   - **`images/` folder**: Store any images or visualizations related to your project here.
+   - **`index.qmd` file**: This will serve as the main page for your project.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+3. **Directory Structure Example**:  
+   After completing the setup, your directory should look like this:
+
+```bash
+.
+├── projects
+│   ├──iris
+│   │  ├── images/
+│   │  └── index.qmd
+```
+:::
+
+## Writing Markdown in Quarto
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **What is Markdown?**
+- Markdown is a lightweight and easy-to-read format for writing text.  
+- Quarto documents are built using Markdown, with some extensions for advanced features.
+- Learn more at [Markdown Guide](https://www.markdownguide.org/).
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **Headings**
+- Use `#` symbols to create headings:
+  - `# Heading 1` → `<h1>`
+  - `## Heading 2` → `<h2>`
+  - `### Heading 3` → `<h3>`
+- Structure your content with proper heading levels for clarity.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **Images**
+- Embed images using the syntax:
+
+`![Alt text](path/to/image.jpg)`
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+There's A LOT more. Checkout...
+
+- [Markdown Guide](https://www.markdownguide.org/)
+- [quarto.org](https://quarto.org)
+:::
+
+## Writing our Iris Project page
+
+**Add Content to `index.qmd`**:  
+Open `index.qmd` and describe your project. 
+
+Include the following:
+
+- A short introduction to the Palmer Penguins dataset.
+- Key steps in your analysis (e.g., data cleaning, visualization, modeling).
+- Include code snippets, plots, and conclusions.
+
+Example content for `index.qmd`:
+
+```{markdown}
+---
+title: Iris
+author: Sep Dadsetan
+date: 2024-11-11
+image: images/ # A url to image here.
+description: This is a description # Short description of the project to be shown on overview page.
+---
+
+# Iris Analysis
+
+The **Iris dataset** is a great sample dataset. It contains information on iris species and sepal dimensions.
+
+## Key Steps
+
+yadda yadda
+```
+
+## Creating projects overview page
+
+The last thing we need to do before we publish our site with the minimal setup is create a project overview page. To do this, open `projects/index.qmd` and add the following text.
+
+```
+---
+title: Projects
+---
+
+## Iris
+
+::::: {.columns}
+::: {.column}
+UCI: Iris Research Project
+Check out this analysis I performed by following the link [here](iris/).
+:::
+::: {.column}
+![](iris/images/)
+:::
+:::::
+
+## Project #2
+```
+
+## Customizing `_quarto.yml`
+::::: {.columns}
+::: {.column}
+After you add the pages
+:::
+::: {.column}
+```yaml
+project:
+  type: website
+
+website:
+  title: "Quarto Portfolio Website"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects/
+        text: Projects
+      - href: blog.qmd
+        text: Blog
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+```
+:::
+:::::
+
+
+## Publishing Your Site 
+
+We need to setup the Github repo to render the site from the `gh_pages` branch.
+
+If it's a fresh repository, you won't have a `gh_pages` branch.
+So, first we need to create an empty one. To do so, run the following code:
+
+```bash
+git checkout --orphan gh-pages
+git reset --hard # make sure all changes are committed before running this!
+git commit --allow-empty -m "Initialising gh-pages branch"
+git push origin gh-pages
+```
+
+- After you finish this, go back to the main branch by running `git checkout main`.
+This must be completed **before** you run `quarto publish`!
+
+- Go to our Repo -> "Settings" -> Pages -> Create from branch and make sure `gh-pages` is selected.
+
+Ta-da! 🎉 Site is published!
+
+# Taking Your Portfolio to the Next Level
+
+## Buy Your Own Domain Name
+
+A personal domain is well worth your investment.
+It will cost you around $20 a year, but it will give you a nice spot for your web presence and also a nice email.
+
+- Go with a .com if it's available. (could also consider .me as well)
+- Hover is a very friendly, straight-forward option to purchase your domain [(can use my referral code for $2 off)](https://hover.com/uYAUiF80)
+- Other options are directly in AWS via Route53 (kinda complicated), Squarespace, and many others...
+
+## Hosting Your Quarto Site
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **How Hosting Works**
+- A domain name provides a DNS entry (e.g., `yourwebsite.com`).
+- The DNS entry must point to a server with an IP address where your site is hosted.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **Hosting Options**
+- **GitHub Pages**:  
+  - Free and easy to set up.  
+  - Perfect for static sites like Quarto.  
+  - Example: Point your domain to `username.github.io`.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+- **Self-Hosting**:  
+  - Run your own server with a public IP address.  
+  - Offers full control but requires technical expertise.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+- **Conventional Web Hosting**:  
+  - Use services like Bluehost or HostGator.  
+  - Simplifies management while offering shared hosting plans.
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+*"Choose the hosting option that best fits your site’s needs, budget, and your technical expertise."*
+:::
+
+## Other Useful Tools for Quarto Development
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+#### **VS Code Tools**
+- **Markdown Extension**:  
+  - Simplifies working with Markdown files.  
+  - Features include:  
+    - Easily paste images directly into your document.  
+    - Automatically update filenames when renamed.  
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+- **Snippets**:  
+  - Reusable pieces of code for common constructs.  
+  - Save time by templating frequently used code (e.g., YAML headers or code chunks).  
+:::
+
+:::{.fragment .fade-in-then-out .absolute top=400}
+*"Tools like these enhance your efficiency and make developing with Quarto even easier!"*
+:::
+
+
+## Resources
+
+#### Helpful Links
+- [quarto.org](https://quarto.org)
+- [Github Pages](https://pages.github.com/)
+- [Happy git and Github for the useR](https://happygitwithr.com/)
+- [qmdclub.com](https://qmdclub.com)
+
+
+## Thank You's
+
+- First of all, everyone here for listening and participating
+- SoCal RUG and UCI for having me
+- Developers behind these wonderful tools
+- Thanks to [Josh Brake](https://joshbrake.github.io/quarto-portfolio-website/) who has some great material I used in this workshop.
+
+![](https://media0.giphy.com/media/ZfK4cXKJTTay1Ava29/giphy.gif?cid=ecf05e47phg610lp121k3yrti5pg6e21zpfgpy728m9nu5h1&ep=v1_gifs_search&rid=giphy.gif&ct=g){fig-align="center"}
+
+

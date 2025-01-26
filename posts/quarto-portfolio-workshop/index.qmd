@@ -107,6 +107,12 @@ Ta-da! 🎉 Site is published!
 - [Pablo Barajas](https://www.linkedin.com/in/pabloibarajas/)
 - [Javier Orraca-Deatcu](https://www.linkedin.com/in/orraca/)
 
+## Slides
+
+```{=html}
+<iframe width="780" height="500" src="presentation.html" title="Building Your Portfolio with Quarto"></iframe>
+```
+
 ---
 
 <script src="https://giscus.app/client.js"
