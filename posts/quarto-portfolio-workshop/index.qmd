@@ -1,8 +1,8 @@
 ---
-title: "January 2025 Portfolio Workshop"
+title: "Workshop Reference Sheet"
 author: "Sep Dadsetan"
 date: "2025-01-27"
-categories: [tips, quarto, workshop]
+categories: [quarto, workshop, tips]
 image: "thumb.jpg"
 title-block-style: default
 title-block-banner: false
