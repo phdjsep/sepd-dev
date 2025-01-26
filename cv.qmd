@@ -3,11 +3,7 @@ title: "Curriculum Vitae"
 format:
   html:
     toc: true
-  pdf:
-    author: Sep Dadsetan
-    pdf-engine: weasyprint
 css: "assets/styles/cv.css"
-format-links: [pdf]
 ---
 
 ::: {.print-only .contact-block}
