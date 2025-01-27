@@ -90,6 +90,8 @@ Ta-da! 🎉 Site is published!
 
 - [Quarto Site](https://quarto.org)
 - [Github](https://www.github.com)
+- [Github Pages](https://pages.github.com/)
+- [Configuring a Custom Domain on Github Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 - [Markdown](https://www.markdownguide.org/)
 - [qmdclub.com](https://www.qmdclub.com)
 - [Awesome Quarto](https://github.com/mcanouil/awesome-quarto)
