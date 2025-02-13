@@ -1,0 +1,66 @@
+---
+title: "Installing Positron Extensions"
+author: "Sep Dadsetan"
+date: "2025-2-13"
+categories: [tips]
+image: "thumb.jpg"
+title-block-style: default
+title-block-banner: false
+comments:
+  giscus: 
+    repo: phdjsep/sepd-dev
+---
+
+I recently started to try and incorporate Positron into my personal workflow. In the course of setting things up to use containers, I found that the "extensions" pane didn't quite display the same results as VS Code. A community member, Jeffrey Sumner, helpfully pointed out that indeed this is noted on the [Positron site](https://positron.posit.co/extensions.html#installing-extensions).
+
+I thought I was blocked, but thankfully this just indicated that installation of some extensions require a little more labor. It took some detective work, but like many things, the technical people of the internet have graciously provided a solution. I'll summarize below to maybe help save you some reading/clicking.
+
+First off, [this thread was invaluable](https://gist.github.com/wanglf/7acc591890dc0d8ceff1e7ec9af32a55). Give it a look over, especially if things aren't working, because it might be that the api changed.
+
+If you find that the extension of interest isn't available in Positron, but is via VS Code, then you'll need some information from the VS Code Extension marketplace in order to download the extension locally and install in Positron manually.
+
+We'll use the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension as an example (because that's the one I was after). When you pull it up in VS Code, you'll see something like below. 
+
+:::::: {.callout-tip}
+We're interested in what's highlighted by the red box.
+:::
+
+![](extension-info.png){width=600}
+
+Here we'll grab the `identifier` and `version` info and paste the parameters into the following API url template:
+
+`https://marketplace.visualstudio.com/_apis/public/gallery/publishers/${publisher}/vsextensions/${extension}/${version}/vspackage`
+
+So for our example, the url would become:
+
+`https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-vscode-remote/vsextensions/remote-containers/0.397.0/vspackage`
+
+Paste it in your browser (or whatever other method of capture you like) and you will have downloaded the `.vsix` file for the extension! You can now install that into Positron.
+
+From the Positron site link above:
+
+> Users can install extensions saved as .vsix files. See the Extensions: Install from VSIX command via the Command Palette Cmd/Ctrl+Shift+P or via the ... in the top right of the Extensions tab.
+
+To illustrate, I've pasted a screenshot.
+
+![](install-extension.png){width=600}
+
+
+---
+
+<script src="https://giscus.app/client.js"
+        data-repo="phdjsep/sepd-dev"
+        data-repo-id="R_kgDOIsJ6VA"
+        data-category="General"
+        data-category-id="DIC_kwDOIsJ6VM4CTVJc"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
