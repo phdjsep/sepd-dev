@@ -1,0 +1,268 @@
+---
+title: "Building Your Portfolio in the AI Age"
+subtitle: "Workshop Reference Sheet & Pre-Read"
+author: "Sep Dadsetan"
+date: 2026-02-27
+categories: [quarto, workshop, ai, portfolio]
+image: "thumb.jpg"
+description: >
+  Everything you need before, during, and after the portfolio-building workshop.
+  Pre-read checklist, slides, setup walkthrough, and resources.
+title-block-style: default
+title-block-banner: false
+comments:
+  giscus: 
+    repo: phdjsep/sepd-dev
+---
+
+## Welcome!
+
+This page is your one-stop reference for the **Building Your Portfolio in the AI Age** workshop. Bookmark it — you'll use it before, during, and after the session.
+
+- 📋 **Before the workshop** → Complete the [Pre-Read Checklist](#pre-read-checklist)
+- 🖥️ **During the workshop** → Follow along with the [Setup Walkthrough](#workshop-setup) and [Slides](#slides)
+- 📚 **After the workshop** → Come back for [Resources](#resources) and [Next Steps](#next-steps)
+
+## Pre-Read Checklist
+
+Please complete these **before** you arrive. They'll save us valuable class time.
+
+### 1. Create a GitHub Account (Required)
+
+If you don't already have one, sign up at [github.com](https://github.com). Use a professional-sounding username — this will become part of your portfolio URL (e.g., `yourusername.github.io`).
+
+**⏱️ Time:** ~5 minutes
+
+### 2. Brush Up on Markdown (Recommended)
+
+Quarto files are written in Markdown. If you're not familiar, spend a few minutes reading the basics:
+
+🔗 [markdownguide.org/basic-syntax](https://www.markdownguide.org/basic-syntax/)
+
+You don't need to memorize anything — just get a feel for headings (`#`), bold (`**text**`), links (`[text](url)`), and lists (`-`).
+
+**⏱️ Time:** ~5 minutes
+
+### 3. Think About Your Projects (Recommended)
+
+Come to the workshop with **1-2 project ideas** you might want to showcase. These don't need to be polished — just ideas. Good candidates:
+
+- A class project or assignment you're proud of
+- A Kaggle competition or personal analysis
+- A data visualization you've created
+- An internship or work project you can discuss publicly
+
+::: {.callout-tip}
+## Quick Checklist
+- [ ] GitHub account created
+- [ ] Skimmed Markdown basics
+- [ ] 1-2 project ideas in mind
+:::
+
+## Slides
+
+<!-- NOTE: To embed the slides, install the embedio extension: -->
+<!-- quarto add coatless-quarto/embedio -->
+<!-- Then uncomment the shortcode below and update the path: -->
+
+<!-- {{< revealjs slides.html >}} -->
+
+*Slides will be embedded here after the workshop. In the meantime, you can view them directly:*
+
+🔗 [View Slides](slides.html)
+
+## Workshop Setup
+
+The following walkthrough will be covered in class, but it's here for reference.
+
+### Step 1: Create Your Repo from the Template
+
+::: {.callout-note collapse="true"}
+## Click to expand
+
+1. Log in to [github.com](https://github.com)
+2. Navigate to the template repo: [github.com/phdjsep/gh-pages-quarto-portfolio-template](https://github.com/phdjsep/gh-pages-quarto-portfolio-template)
+3. Click **"Use this template"** → **"Create new repo"**
+4. In "Repository name", enter: `<your-username>.github.io`
+5. Click **"Create Repository"**
+:::
+
+### Step 2: Launch a Codespace
+
+::: {.callout-note collapse="true"}
+## Click to expand
+
+1. From your new repo, click the green **"Code"** button
+2. Select the **"Codespaces"** tab
+3. Click **"Create codespace on main"**
+4. Wait ~2-3 minutes for it to spin up
+
+You'll get a full VS Code editor in your browser with Python, Quarto, and GitHub Copilot pre-installed.
+:::
+
+### Step 3: Create Your Quarto Site
+
+::: {.callout-note collapse="true"}
+## Click to expand
+
+In the terminal, run:
+
+```bash
+quarto --version    # Verify installation
+quarto create       # Follow the prompts
+```
+
+Choose these options:
+
+```bash
+? Create › project
+? Type › website
+? Directory › ./
+? Title (./) › "My Portfolio"
+```
+
+Then preview:
+
+```bash
+quarto preview
+```
+:::
+
+### Step 4: Set Up Auto-Deploy with GitHub Actions
+
+::: {.callout-note collapse="true"}
+## Click to expand
+
+Create the file `.github/workflows/publish.yml` with the following content:
+
+```yaml
+name: Deploy Quarto Site
+on:
+  push:
+    branches: [main]
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+```
+
+Then enable GitHub Pages:
+
+1. Go to your repo → **Settings** → **Pages**
+2. Under "Source", select the **`gh-pages`** branch
+3. Click **Save**
+
+Your site will be live at `https://<your-username>.github.io` after the first successful action run (~2 minutes).
+:::
+
+### Step 5: Create a Project Post
+
+::: {.callout-note collapse="true"}
+## Click to expand
+
+```bash
+mkdir -p posts/my-first-project
+touch posts/my-first-project/index.qmd
+```
+
+Add this YAML header to the new `index.qmd`:
+
+```yaml
+---
+title: "Your Project Title"
+author: "Your Name"
+date: today
+categories: [analysis, python]
+description: >
+  A brief description of your project.
+---
+```
+
+Then structure your post with these sections:
+
+- **The Problem** — why does this matter?
+- **My Approach** — what methods and tools did you use?
+- **Key Findings** — results and visualizations
+- **Reflections** — what you learned, limitations, next steps
+:::
+
+## AI Tips for Portfolio Building
+
+Here are the prompt patterns we covered in the workshop:
+
+### Drafting an About Page
+
+> *I'm a [degree] student studying [field]. I'm interested in [topics]. Help me draft a 150-word "About Me" for my portfolio. Professional but personable.*
+
+### Writing a Project Summary
+
+> *I completed a project where I [description]. The data was [source]. I used [methods]. The key finding was [result]. Write a portfolio summary: Problem → Approach → Results → Reflection.*
+
+### Troubleshooting Quarto Errors
+
+> *I'm getting this error when I run `quarto preview`: [paste error]. My `_quarto.yml` looks like this: [paste config]. What's wrong?*
+
+::: {.callout-important}
+## The Golden Rule
+AI assists, you author. Every word on your portfolio should represent **your** thinking. Use AI to get unstuck, not to replace your voice.
+:::
+
+## Next Steps
+
+After the workshop, here's your roadmap:
+
+| When | What |
+|:-----|:-----|
+| **This week** | Publish your "About Me" page and first project post |
+| **This month** | Add 1-2 more projects from coursework or personal work |
+| **Ongoing** | Customize your theme, add a CV page, explore [Quarto themes](https://quarto.org/docs/output-formats/html-themes.html) |
+| **Before job hunting** | Get a custom domain (~$20/year) and add the URL to your resume and LinkedIn |
+
+## Resources
+
+### Core Tools
+
+| Resource | Link |
+|:---------|:-----|
+| Quarto | [quarto.org](https://quarto.org) |
+| GitHub | [github.com](https://github.com) |
+| GitHub Pages | [pages.github.com](https://pages.github.com) |
+| GitHub Education (free Copilot) | [education.github.com](https://education.github.com) |
+| Markdown Guide | [markdownguide.org](https://www.markdownguide.org/) |
+
+### Inspiration & Learning
+
+| Resource | Link |
+|:---------|:-----|
+| Quarto Site Gallery | [qmdclub.com](https://www.qmdclub.com) |
+| Awesome Quarto | [github.com/mcanouil/awesome-quarto](https://github.com/mcanouil/awesome-quarto) |
+| Custom Domains on GitHub Pages | [GitHub Docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) |
+| posit::conf(2025) Quarto Workshops | [Quarto Blog](https://quarto.org/docs/blog/) |
+| Happy Git and GitHub for the useR | [happygitwithr.com](https://happygitwithr.com/) |
+
+### Workshop Materials
+
+| Resource | Link |
+|:---------|:-----|
+| Workshop Template Repo | [github.com/phdjsep/gh-pages-quarto-portfolio-template](https://github.com/phdjsep/gh-pages-quarto-portfolio-template) |
+| This Reference Page | [sepd.dev/posts/quarto-portfolio-workshop](https://sepd.dev/posts/quarto-portfolio-workshop/) |
+| Buy a Domain | [Hover](https://hover.com/uYAUiF80) |
+
+### People
+
+- [Sep Dadsetan](https://www.linkedin.com/in/sepdadsetan/)
+- [Rebecca Butler](https://www.linkedin.com/in/rebecca-butler-4b0166a0/)
+- [Pablo Barajas](https://www.linkedin.com/in/pabloibarajas/)
+- [Javier Orraca-Deatcu](https://www.linkedin.com/in/orraca/)
+
+### Groups
+
+- [SoCalRUG](https://www.meetup.com/socal-rug/)
