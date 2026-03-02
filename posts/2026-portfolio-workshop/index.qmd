@@ -100,32 +100,22 @@ The following walkthrough will be covered in class, but it's here for reference.
 You'll get a full VS Code editor in your browser with Python, Quarto, and GitHub Copilot pre-installed.
 :::
 
-### Step 3: Create Your Quarto Site
+### Step 3: Preview Your Site
 
 ::: {.callout-note collapse="true"}
 ## Click to expand
 
-In the terminal, run:
-
-```bash
-quarto --version    # Verify installation
-quarto create       # Follow the prompts
-```
-
-Choose these options:
-
-```bash
-? Create › project
-? Type › website
-? Directory › ./
-? Title (./) › "My Portfolio"
-```
-
-Then preview:
+The template already includes a ready-to-go Quarto site (`_quarto.yml`, `index.qmd`, `about.qmd`, and `styles.css`). No need to run `quarto create` — just preview:
 
 ```bash
 quarto preview
 ```
+
+You should see a live site with a Home page and an About page. From here, personalize:
+
+- **`about.qmd`** — Replace the placeholder bio with your own info, update the LinkedIn/GitHub links, and add a `profile.jpg`
+- **`index.qmd`** — Edit the welcome text to introduce yourself
+- **`styles.css`** — Add any custom styling later
 :::
 
 ### Step 4: Set Up Auto-Deploy with GitHub Actions
@@ -133,13 +123,14 @@ quarto preview
 ::: {.callout-note collapse="true"}
 ## Click to expand
 
-Create the file `.github/workflows/publish.yml` with the following content:
+The template already includes the workflow file at `.github/workflows/publish.yml`. Here's what it contains:
 
 ```yaml
 name: Deploy Quarto Site
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -148,13 +139,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: quarto-dev/quarto-actions/setup@v2
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Render
+        uses: quarto-dev/quarto-actions/render@v2
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
 ```
 
-Then enable GitHub Pages:
+All you need to do is enable GitHub Pages:
 
 1. Go to your repo → **Settings** → **Pages**
 2. Under "Source", select the **`gh-pages`** branch
